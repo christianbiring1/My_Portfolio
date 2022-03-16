@@ -55,14 +55,13 @@ footer {
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
-
-  margin: 12px;
-  margin-left: 1.25rem;
+  margin: 12px 12px 12px 1.25rem;
 }
 
 .social {
   margin-left: 1.25rem;
 }
+
 .social a {
   display: inline-block;
   margin: 7px;
