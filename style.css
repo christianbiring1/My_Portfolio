@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("images/header-background-mobile.svg") 100% no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #6070ff;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+}
