@@ -20,6 +20,7 @@ header h1 {
   left: 12px;
   top: 10px;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -27,6 +28,7 @@ header h1 {
   align-items: center;
   padding-top: 10rem;
 }
+
 .primary-text {
   font-weight: 700;
   font-size: 40px;
@@ -41,19 +43,23 @@ header h1 {
   color: #344563;
   width: 330px;
 }
+
 footer {
   display: flex;
   flex-direction: column;
 }
+
 .connect {
   color: #7f8cff;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
+
   margin: 12px;
   margin-left: 1.25rem;
 }
+
 .social {
   margin-left: 1.25rem;
 }
