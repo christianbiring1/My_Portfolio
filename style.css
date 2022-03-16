@@ -11,6 +11,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  margin: 12px;
 }
 
 header h1 {
@@ -18,4 +19,45 @@ header h1 {
   height: 20px;
   left: 12px;
   top: 10px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.primary-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  width: 330px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+.connect {
+  color: #7f8cff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 12px;
+  margin-left: 1.25rem;
+}
+.social {
+  margin-left: 1.25rem;
+}
+.social a {
+  display: inline-block;
+  margin: 7px;
 }
