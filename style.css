@@ -20,13 +20,22 @@ header h1 {
   left: 12px;
   top: 10px;
 }
+header img {
+  cursor: pointer;
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
+}
+
+.container {
+  text-align: justify;
+  margin: 0 auto;
+  position: relative;
 }
 
 .primary-text {
@@ -45,9 +54,8 @@ header h1 {
   margin: 0 auto;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
+.foot {
+  margin-top: 5px;
 }
 
 .connect {
@@ -56,14 +64,56 @@ footer {
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 12px 12px 12px 1.25rem;
-}
-
-.social {
-  margin-left: 1.25rem;
+  margin: 12px 0;
 }
 
 .social a {
   display: inline-block;
   margin: 7px;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icone-btn {
+  position: absolute;
+}
+.big-elips {
+  left: 300px;
+  top: -10px;
+}
+.big-rect {
+  left: 250px;
+  top: -72px;
+}
+
+.top-circ {
+  top: -50px;
+  left: 100px;
+}
+
+.aside-elip {
+  left: -150px;
+  top: -60px;
+}
+
+.btm-elips {
+  left: 300px;
+}
+
+.btm-mic {
+  left: 272px;
+  bottom: 50px;
+}
+
+.btn-rect {
+  bottom: -100px;
+  left: 160px;
+}
+
+.btn-circle {
+  left: 10px;
+  bottom: -30px;
 }
