@@ -11,6 +11,7 @@ body {
   position: relative;
   height: 100vh;
 }
+
 header {
   margin: 1rem;
   vertical-align: middle;
@@ -29,6 +30,7 @@ header .logo {
   font-weight: 700;
   text-transform: capitalize;
 }
+
 header img {
   cursor: pointer;
 }
