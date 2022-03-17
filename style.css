@@ -5,118 +5,77 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: url("images/header-background-mobile.svg") 100% no-repeat;
 }
 
+body {
+  position: relative;
+  height: 100vh;
+}
 header {
+  margin: 1rem;
+  vertical-align: middle;
+}
+
+header nav {
   display: flex;
   justify-content: space-between;
-  margin: 12px;
 }
 
-header h1 {
+header .logo {
   color: #6070ff;
   height: 20px;
   left: 12px;
-  top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
 }
-
 header img {
   cursor: pointer;
 }
 
 .wrapper {
+  margin: 0 auto;
+  width: 320px;
+  background: center/contain no-repeat
+    url("images/header-shapes\ mobile@2x.svg");
+}
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5rem;
-}
-
-.container {
-  text-align: justify;
-  margin: 0 auto;
-  position: relative;
 }
 
 .primary-text {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
+  font-size: 1.8rem;
+  color: #313131;
+  padding: 2.8rem 0 10px;
 }
 
-.details {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  width: 330px;
-  margin: 0 auto;
+.intro {
+  color: #505050;
+  padding: 0.2rem;
 }
 
-.foot {
-  margin-top: 5px;
+.social {
+  margin-top: 2px;
 }
 
-.connect {
-  color: #7f8cff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+.social p {
   text-transform: uppercase;
-  margin: 12px 0;
+  font-weight: 500;
+  color: #6070ff;
+  padding-bottom: 18px;
 }
 
-.social a {
-  display: inline-block;
-  margin: 7px;
+.social ul {
+  display: flex;
 }
 
-.banner {
-  position: relative;
-  margin-bottom: 10px;
+.social ul li {
+  list-style: none;
+  margin-left: -10px;
 }
 
-.icone-btn {
-  position: absolute;
-}
-
-.big-elips {
-  left: 300px;
-  top: -10px;
-}
-
-.big-rect {
-  left: 250px;
-  top: -72px;
-}
-
-.top-circ {
-  top: -50px;
-  left: 100px;
-}
-
-.aside-elip {
-  left: -150px;
-  top: -60px;
-}
-
-.btm-elips {
-  left: 300px;
-}
-
-.btm-mic {
-  left: 272px;
-  bottom: 50px;
-}
-
-.btn-rect {
-  bottom: -100px;
-  left: 160px;
-}
-
-.btn-circle {
-  left: 10px;
-  bottom: -30px;
+.social ul li a {
+  margin: 15px;
 }
