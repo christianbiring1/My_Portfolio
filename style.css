@@ -20,6 +20,7 @@ header h1 {
   left: 12px;
   top: 10px;
 }
+
 header img {
   cursor: pointer;
 }
@@ -80,10 +81,12 @@ header img {
 .icone-btn {
   position: absolute;
 }
+
 .big-elips {
   left: 300px;
   top: -10px;
 }
+
 .big-rect {
   left: 250px;
   top: -72px;
