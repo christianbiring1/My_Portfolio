@@ -41,10 +41,10 @@ header img {
   margin-left: auto;
   margin-right: auto;
   width: 320px;
-
-  background: center/contain no-repeat
-    url("images/header-shapes\ mobile@2x.svg");
+  background: url("images/header-shapes\ mobile@2x.svg") center/contain;
+  background-repeat: no-repeat;
 }
+
 .container {
   display: flex;
   flex-direction: column;
