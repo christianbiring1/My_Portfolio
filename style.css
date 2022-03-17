@@ -36,8 +36,12 @@ header img {
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
+
   background: center/contain no-repeat
     url("images/header-shapes\ mobile@2x.svg");
 }
