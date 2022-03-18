@@ -10,16 +10,19 @@
 body {
   position: relative;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
   margin: 1rem;
   vertical-align: middle;
+  overflow: hidden;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 header .logo {
@@ -40,8 +43,8 @@ header img {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  background: url("images/header-shapes\ mobile@2x.svg") center/contain;
+  width: calc(100% - 10%);
+  background: url("images/header-shapes\ mobile@2x.svg") center/310px 600px;
   background-repeat: no-repeat;
 }
 
@@ -52,25 +55,28 @@ header img {
 
 .primary-text {
   font-weight: 700;
-  font-size: 1.8rem;
-  color: #313131;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
   padding: 2.8rem 0 10px;
 }
 
 .intro {
-  color: #505050;
-  padding: 0.2rem;
+  color: #344563;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .social {
-  margin-top: 2px;
+  margin-top: 12px;
 }
 
 .social p {
   text-transform: uppercase;
   font-weight: 500;
-  color: #6070ff;
-  padding-bottom: 18px;
+  color: #7f8cff;
+  padding-bottom: 15px;
 }
 
 .social ul {
