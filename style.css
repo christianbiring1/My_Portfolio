@@ -39,18 +39,16 @@ header img {
 }
 
 .wrapper {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: calc(100% - 10%);
-  background: url("images/header-shapes\ mobile@2x.svg") center/310px 600px;
+  background-image: url("images/header-shapes\ mobile@2x.svg");
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 327px;
 }
 
 .primary-text {
@@ -66,6 +64,7 @@ header img {
   line-height: 24px;
   font-weight: 400;
   font-size: 16px;
+  /* width: 320px; */
 }
 
 .social {
