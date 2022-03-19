@@ -39,16 +39,18 @@ header img {
 }
 
 .wrapper {
+  position: relative;
+}
+
+.first-section {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 327px;
+  height: 718px;
   background-image: url("images/header-shapes\ mobile@2x.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.container {
-  overflow: hidden;
-  margin: 0 auto;
-  width: 327px;
 }
 
 .primary-text {
@@ -56,7 +58,7 @@ header img {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  padding: 2.8rem 0 10px;
+  padding: 5rem 0 10px;
 }
 
 .intro {
