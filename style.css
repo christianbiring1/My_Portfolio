@@ -41,11 +41,13 @@ header img {
 .wrapper {
   position: relative;
   height: 1228px;
+  left: 24px;
+  right: 24px;
+  width: 327px;
 }
 
 .first-section {
-  overflow: hidden;
-  margin: 0 auto;
+  position: relative;
   width: 327px;
   height: 718px;
   background-image: url("images/header-shapes\ mobile@2x.svg");
@@ -91,4 +93,8 @@ header img {
 
 .social ul li a {
   margin: 15px;
+}
+
+.work-section {
+  display: grid;
 }
