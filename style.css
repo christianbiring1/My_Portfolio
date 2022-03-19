@@ -105,24 +105,18 @@ header img {
   left: -80px;
 }
 
-.card-work button:hover,
-.resume:hover,
-.contact button:hover {
+.card-work button:hover {
   color: #fff;
   background: #6070ff;
-  box-shadow: 0px 8px 16px #4053fc3d;
+  box-shadow: 0 8px 16px #4053fc3d;
 }
 
-.card-work button:active,
-.resume:active,
-.contact button:active {
+.card-work button:active {
   background: #2230d2;
   color: #fff;
 }
 
-.card-work button:disabled,
-.resume:disabled,
-.conatct button:disabled {
+.card-work button:disabled {
   color: #5e6c84;
   background: #fff;
   border-color: #5e6c84;
@@ -309,6 +303,22 @@ header img {
   margin: 15px 0;
 }
 
+.resume:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.resume:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.resume:disabled {
+  color: #5e6c84;
+  background: #fff;
+  border-color: #5e6c84;
+}
 .mastering .icone {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -403,6 +413,22 @@ header img {
   font-weight: 500;
   border: 1px solid #6070ff;
   margin: 15px 0 20px;
+}
+
+.contact button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.contact button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.contact button:disabled {
+  color: #5e6c84;
+  background: #fff;
+  border-color: #5e6c84;
 }
 
 .fa-solid {
