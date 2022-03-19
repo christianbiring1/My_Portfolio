@@ -247,9 +247,49 @@ header img {
   font-weight: 500;
   font-size: 17px;
   text-transform: capitalize;
-  border: 1px solid;
-  padding: 0.5em 0.5em;
+  border: 1px solid #6070ff;
+  padding: 0.5em;
   border-radius: 10px;
   position: relative;
   left: -80px;
+}
+
+.about {
+  margin: 100px 0 20px;
+}
+.about h1 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.content {
+  color: #344563;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about .resume {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  letter-spacing: 0.05em;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  padding: 0.6em;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.mastering .icone {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.icone img {
+}
+.mastering ul li {
+  list-style-type: none;
 }
