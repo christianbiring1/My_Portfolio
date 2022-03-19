@@ -105,6 +105,21 @@ header img {
   left: -80px;
 }
 
+.contact button {
+  width: 140px;
+  height: 48px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 24px;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 3%;
+  color: #6070ff;
+  font-weight: 500;
+  border: 1px solid #6070ff;
+  margin: 15px 0 20px;
+}
+
 .card-work button:hover {
   color: #fff;
   background: #6070ff;
@@ -319,6 +334,7 @@ header img {
   background: #fff;
   border-color: #5e6c84;
 }
+
 .mastering .icone {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -398,21 +414,6 @@ header img {
   width: 100%;
   border-radius: 8px;
   margin-top: 20px;
-}
-
-.contact button {
-  width: 140px;
-  height: 48px;
-  padding: 12px 16px;
-  border-radius: 8px;
-  line-height: 24px;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 3%;
-  color: #6070ff;
-  font-weight: 500;
-  border: 1px solid #6070ff;
-  margin: 15px 0 20px;
 }
 
 .contact button:hover {
