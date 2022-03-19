@@ -91,7 +91,7 @@ header img {
   margin-left: -10px;
 }
 
-.card-work a {
+.card-work button {
   color: #396df2;
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -105,6 +105,29 @@ header img {
   left: -80px;
 }
 
+.card-work button:hover,
+.resume:hover,
+.contact button:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0px 8px 16px #4053fc3d;
+}
+
+.card-work button:active,
+.resume:active,
+.contact button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.card-work button:disabled,
+.resume:disabled,
+.conatct button:disabled {
+  color: #5e6c84;
+  background: #fff;
+  border-color: #5e6c84;
+}
+
 .social ul li a {
   margin: 15px;
 }
@@ -114,13 +137,14 @@ header img {
   row-gap: 12px;
 }
 
-.work-section figcaption {
+.work-section h2 {
   flex: none;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
   margin: 12px 0;
+  text-align: start;
 }
 
 .card-work {
@@ -271,7 +295,7 @@ header img {
   font-weight: 400;
 }
 
-.about .resume {
+.resume {
   text-decoration: none;
   font-weight: 500;
   font-size: 17px;
@@ -289,30 +313,37 @@ header img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
-  background-color: #ececec;
+  background-color: #f7f7f9;
+  margin: 5px 0;
+  padding: 5px 0;
 }
 
 .mastering .icone span {
   display: inline;
-  margin: 10px 0;
+  margin: 0;
   position: relative;
 }
 
 .label {
   position: relative;
-  left: -110px;
+  left: -100px;
+  top: 13px;
+  color: #253858;
 }
 
 .mastering p {
   font-weight: 500;
   font-size: 20px;
   padding: 0.3em;
-  background-color: #e9e9e9;
 }
 
 .mastering ul li {
   list-style-type: none;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.mastering li p {
+  margin: 10px 0;
 }
 
 .contact h1 {
@@ -379,4 +410,15 @@ header img {
   color: #172b4d;
   margin-left: 160px;
   font-size: 15px;
+}
+
+.frameworks,
+.skills {
+  position: relative;
+  top: -20px;
+  padding: 5px;
+}
+
+.skills {
+  top: -30px;
 }
