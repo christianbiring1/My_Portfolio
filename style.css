@@ -39,16 +39,16 @@ header img {
 }
 
 .wrapper {
+}
+
+.first-section {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 327px;
   background-image: url("images/header-shapes\ mobile@2x.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.container {
-  overflow: hidden;
-  margin: 0 auto;
-  width: 327px;
 }
 
 .primary-text {
