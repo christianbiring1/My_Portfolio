@@ -133,6 +133,7 @@ header img {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
+
 .type {
   display: flex;
   flex-direction: row;
@@ -288,7 +289,6 @@ header img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
-
   background-color: #ececec;
 }
 
@@ -376,8 +376,7 @@ header img {
 
 .fa-solid {
   font-weight: 100;
-  float: right;
   color: #172b4d;
-  margin-left: -10px;
-  font-weight: 0.05px;
+  margin-left: 160px;
+  font-size: 15px;
 }
