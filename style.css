@@ -107,7 +107,7 @@ header img {
 .contact button {
   width: 140px;
   height: 48px;
-  padding: 12px 16px;
+  padding: 12px 16px 30px 16px;
   border-radius: 8px;
   line-height: 24px;
   font-size: 17px;
@@ -389,10 +389,23 @@ header img {
 }
 
 .contact {
-  background: url(images/Contactme.png) no-repeat;
-  padding: 10px;
+  background-color: #6070ff;
+  background-image: url(images/contact-form-background.png);
+  background-repeat: no-repeat;
+  background-position-x: 110px;
+  background-position-y: 50px;
+  padding: 80px 10px 10px 10px;
+  border-top-left-radius: 120px;
   position: relative;
   left: -25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact input {
@@ -412,11 +425,15 @@ header img {
   width: 100%;
   border-radius: 8px;
   margin-top: 20px;
+  padding: 10px;
+  height: 200px;
 }
 
 .contact button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px #4053fc3d;
+  color: #fff;
+  border-color: #fff;
 }
 
 .contact button:active {

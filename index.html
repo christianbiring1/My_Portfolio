@@ -246,22 +246,36 @@
           that you need built or a project that needs coding. I'd love to help
           with it
         </p>
-        <p>
-          <input type="text" id="name" value="Christian Biringanine" />
-        </p>
-        <p>
-          <input type="email" id="email" value="christianbiringanine22@gmail" />
-        </p>
-        <p>
+        <form
+          action="https://formspree.io/f/mzbovqko"
+          method="POST"
+          class="form-contact"
+        >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            maxlength="30"
+            required
+          /><br />
+          <input
+            type="email"
+            id="email"
+            name="mail"
+            placeholder="Enter your email"
+            required
+          /><br />
           <textarea
             name="msg"
             id="msg"
-            cols="30"
-            rows="10"
+            maxlength="500"
             placeholder="Write your message here"
-          ></textarea>
-        </p>
-        <button>Get in touch</button>
+            required
+          ></textarea
+          ><br />
+          <button type="submit">Get in touch</button>
+        </form>
       </section>
     </main>
   </body>
