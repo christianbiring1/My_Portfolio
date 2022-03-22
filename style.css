@@ -51,7 +51,6 @@ header img {
   width: 327px;
   height: 718px;
   background-image: url("images/header-shapes\ mobile@2x.svg");
-  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -391,7 +390,6 @@ header img {
 
 .contact {
   background: url(images/Contactme.png) no-repeat;
-  background-size: 500px 850px;
   padding: 10px;
   position: relative;
   left: -25px;
