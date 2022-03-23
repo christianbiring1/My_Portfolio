@@ -464,3 +464,22 @@ header img {
 .skills {
   top: -30px;
 }
+
+.home-page,
+.about-page,
+.contact-page {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-page,
+  .about-page,
+  .contact-page {
+    display: inline;
+    text-decoration: none;
+  }
+
+  header img {
+    display: none;
+  }
+}
