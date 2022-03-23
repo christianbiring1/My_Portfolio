@@ -482,4 +482,33 @@ header img {
   header img {
     display: none;
   }
+
+  .desk-nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    right: 142px;
+  }
+
+  .desk-nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: #344563;
+    font-weight: 500;
+  }
+
+  .desk-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 12px;
+  }
 }
