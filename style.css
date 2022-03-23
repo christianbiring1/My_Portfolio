@@ -94,6 +94,13 @@ header img {
   margin-left: -10px;
 }
 
+.desktop-work1,
+.desktop-work2,
+.desktop-work3,
+.desktop-work4 {
+  display: none;
+}
+
 .card-work button {
   color: #396df2;
   text-decoration: none;
@@ -523,12 +530,13 @@ header img {
   .first-section {
     position: relative;
     width: 1397.4px;
-    height: 721.46px;
+    height: 700px;
     left: 34.6px;
     top: 110px;
     background-image: url("desktop-img/Headerbg.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 100px;
   }
 
   .first-section-container {
@@ -562,7 +570,17 @@ header img {
     margin: 12px 0px;
   }
 
-  .social p {
-    margin: 0px 8px;
+  .work-img1,
+  .work-img2,
+  .work-img3,
+  .work-img4 {
+    display: none;
+  }
+
+  .desktop-work1,
+  .desktop-work2,
+  .desktop-work3,
+  .desktop-work4 {
+    display: inline;
   }
 }
