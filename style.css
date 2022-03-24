@@ -650,7 +650,7 @@ header img {
     color: #091e42;
     margin: 12px 0;
     position: absolute;
-    top: 0px;
+    top: 0;
   }
 
   .type .title {
