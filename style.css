@@ -785,6 +785,7 @@ header img {
     width: 1440px;
     height: 846px;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    padding-top: 120px;
   }
 
   .interest {
