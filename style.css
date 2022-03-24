@@ -495,11 +495,15 @@ header img {
   }
   header {
     margin: 0;
+    height: 90px;
+    text-align: center;
   }
+
   header nav {
     position: fixed;
     z-index: 1;
     background-color: #fff;
+    box-shadow: 0 3px 5px lightgray;
   }
   header img {
     display: none;
@@ -510,7 +514,7 @@ header img {
     align-items: center;
     height: 40px;
     position: relative;
-    top: 10px;
+    top: 0;
     right: 142px;
   }
 
@@ -530,8 +534,9 @@ header img {
     line-height: 20px;
     height: 40px;
     position: relative;
-    top: 10px;
+    top: 0;
     left: 12px;
+    margin-left: 100px;
   }
 
   .wrapper {
