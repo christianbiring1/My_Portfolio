@@ -718,4 +718,61 @@ header img {
     clear: right;
     top: 120px;
   }
+
+  .about {
+    margin: 100px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+
+  .left {
+    width: 447px;
+    height: 392px;
+  }
+
+  .mastering {
+    width: 684px;
+    height: 360px;
+    position: relative;
+  }
+
+  .flex-icone {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    top: 15px;
+    left: 10px;
+    width: 414px;
+  }
+  .icone {
+    position: relative;
+  }
+
+  .label {
+    position: relative;
+    left: -100px;
+    top: 60px;
+  }
+
+  .fav-html {
+    position: relative;
+    left: -60px;
+  }
+
+  .fav-css {
+    position: relative;
+    left: -60px;
+  }
+
+  .frameworks {
+    position: relative;
+    top: 50px;
+  }
+
+  .skills {
+    position: relative;
+    top: 40px;
+  }
 }
