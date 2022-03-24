@@ -405,7 +405,7 @@ header img {
 
 .contact {
   background-color: #6070ff;
-  background-image: url(images/contact-form-background.png);
+  background-image: url("./images/contact-form-background.png");
   background-repeat: no-repeat;
   background-position-x: 110px;
   background-position-y: 50px;
@@ -774,5 +774,41 @@ header img {
   .skills {
     position: relative;
     top: 40px;
+  }
+
+  .contact {
+    background-color: #6070ff;
+    background-image: url("./desktop-img/contactformbackgroundshapes.svg");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 50px;
+    width: 1440px;
+    height: 846px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  .interest {
+    margin: 0 auto 25px;
+    width: 569px;
+    height: 102px;
+  }
+
+  .form-contact {
+    width: 447px;
+    height: 395px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .contact input {
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  .contact textarea {
+    width: 447px;
+    height: 170px;
+    border-radius: 2px;
   }
 }
