@@ -493,6 +493,7 @@ header img {
     display: inline;
     text-decoration: none;
   }
+
   header {
     margin: 0;
     height: 90px;
@@ -505,6 +506,7 @@ header img {
     background-color: #fff;
     box-shadow: 0 3px 5px lightgray;
   }
+
   header img {
     display: none;
   }
@@ -583,7 +585,7 @@ header img {
   .intro {
     line-height: 28px;
     font-size: 20px;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .work-section {
@@ -668,7 +670,7 @@ header img {
     width: 120px;
     height: 24px;
     top: 80px;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 
   .domain::before {
@@ -703,13 +705,13 @@ header img {
     height: 50px;
     top: 100px;
     left: 40px;
-    margin: 0px;
+    margin: 0;
   }
 
   .languages-desk {
     flex: none;
-    margin: 0px 15px;
-    padding: 0px;
+    margin: 0 15px;
+    padding: 0;
     position: relative;
     top: 100px;
     left: 15px;
@@ -751,6 +753,7 @@ header img {
     left: 10px;
     width: 414px;
   }
+
   .icone {
     position: relative;
   }
