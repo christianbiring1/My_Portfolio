@@ -183,7 +183,6 @@ header img {
   grid-template-rows: auto;
   padding: 16px;
   height: auto;
-  /* left: calc(50% - 372px / 2); */
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
@@ -657,12 +656,6 @@ header img {
     width: 100%;
   }
 
-  .aside {
-    /* width: 100%; */
-    /* position: relative;
-    height: auto; */
-  }
-
   .work-img1,
   .work-img2,
   .work-img3,
@@ -755,9 +748,7 @@ header img {
   }
 
   .description {
-    /* position: relative; */
     width: calc(90% - 8px);
-    /* height: auto; */
     top: 50px;
     left: 30px;
     margin: 0;
@@ -787,6 +778,7 @@ header img {
     column-gap: 0;
     border-top-right-radius: 150px;
     align-content: center;
+    padding-left: 120px;
   }
 
   .left {
@@ -843,7 +835,7 @@ header img {
   .prog-fram,
   .prog-skills,
   .prog-lang {
-    width: 70%;
+    width: 90%;
   }
 
   .contact {

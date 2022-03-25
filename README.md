@@ -20,6 +20,12 @@
 
 - Have completed the previous activities.
 
+## Set up
+
+- git clone git@github.com:christianbiring1/portfolio-mobile-version.git
+- cd portfolio-mobile-vesrion
+- code
+
 ## Authors
 
 👤 **Christian biringanine**
