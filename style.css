@@ -854,6 +854,10 @@ header img {
     height: 170px;
     border-radius: 2px;
   }
+
+  .contact input {
+    padding: 15px;
+  }
 }
 
 @media screen and (min-width: 960px) {
