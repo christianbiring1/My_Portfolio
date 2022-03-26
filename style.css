@@ -863,6 +863,7 @@ header img {
     height: 170px;
     border-radius: 2px;
   }
+}
 
 @media screen and (min-width: 960px) {
   .card-work button {
