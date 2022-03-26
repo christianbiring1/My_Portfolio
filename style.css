@@ -573,6 +573,10 @@ header img {
     margin-left: 100px;
   }
 
+  .desk-logo:hover {
+    transform: rotate(360deg);
+  }
+
   .wrapper {
     top: 0;
     width: 100%;
@@ -657,6 +661,11 @@ header img {
   .card-work1 img,
   .card-work2 img {
     width: 100%;
+  }
+
+  .card-work1 img:hover,
+  .card-work2 img:hover {
+    transform: scale(1.01);
   }
 
   .ordering {
