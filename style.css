@@ -572,6 +572,10 @@ header img {
     left: 0;
     margin-left: 100px;
   }
+  
+  .desk-logo:hover {
+    transform: rotate(360deg);
+  }
 
   .wrapper {
     top: 0;
@@ -854,7 +858,6 @@ header img {
     height: 170px;
     border-radius: 2px;
   }
-}
 
 @media screen and (min-width: 960px) {
   .card-work button {
