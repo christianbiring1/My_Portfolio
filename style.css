@@ -573,8 +573,19 @@ header img {
     margin-left: 100px;
   }
 
-  .desk-logo:hover {
-    transform: rotate(360deg);
+  .desk-logo a {
+    animation-duration: 1s;
+    animation-name: rotate;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .wrapper {
@@ -842,6 +853,11 @@ header img {
     margin: 0 auto 25px;
     width: 569px;
     height: 102px;
+    transition: all 0.5s;
+  }
+
+  .interest:hover {
+    transform: translatex(-20px);
   }
 
   .form-contact {
