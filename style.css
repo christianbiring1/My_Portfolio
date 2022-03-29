@@ -321,7 +321,7 @@ header img {
   padding: 100px 0 20px;
 }
 
-.about h1 {
+.about h2 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -416,7 +416,7 @@ header img {
   left: 10px;
 }
 
-.contact h1 {
+.contact h2 {
   color: #fff;
   text-align: center;
   height: 56px;
