@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link! You can check the live demo here](https://christianbiring1.github.io)
+[Live Demo Link! You can check the live demo here](https://christianbiring1.github.io/My_Portfolio/)
 
 ### Prerequisites
 
