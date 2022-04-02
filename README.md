@@ -2,7 +2,7 @@
 
 > Description of the project.
 
-- set up a new repository and prepare it for development using best practices (e.g. linters).
+- set up a new repository and prepare it for deployement using best practices (e.g. linters).
 
 - build all the sections (introduction, works section, About me and contact section) of the mobile and Desktop version of my portfoliowebsite using the template I have chosen in Figma.
 
@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link! You can check the live demo here](https://christianbiring1.github.io/My_Portfolio/)
+[You can check the live demo of my portfolio here](https://christianbiring1.github.io/My_Portfolio/)
 
 ### Prerequisites
 
@@ -23,7 +23,7 @@
 ## Set up
 
 - git clone git@github.com:christianbiring1/portfolio-mobile-version.git
-- cd portfolio-mobile-vesrion
+- cd portfolio-mobile-version
 - code
 
 ## Author
