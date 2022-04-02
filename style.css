@@ -346,6 +346,7 @@ header img {
   padding: 0.6em;
   display: inline-block;
   margin: 15px 0;
+  animation: wiggle 2s linear infinite;
 }
 
 .resume:hover {
@@ -515,6 +516,20 @@ header img {
 }
 
 @media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #2230d2;
+  }
+
   .home-page,
   .about-page,
   .contact-page {
@@ -574,7 +589,7 @@ header img {
   }
 
   .desk-logo a {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-name: rotate;
   }
 
@@ -780,6 +795,38 @@ header img {
     width: 447px;
     height: 392px;
     margin-left: 20px;
+  }
+
+  @keyframes wiggle {
+    0%,
+    7% {
+      transform: rotate(0);
+    }
+
+    15% {
+      transform: rotateZ(-15deg);
+    }
+
+    20% {
+      transform: rotateZ(10deg);
+    }
+
+    25% {
+      transform: rotateZ(-10deg);
+    }
+
+    30% {
+      transform: rotateZ(6deg);
+    }
+
+    35% {
+      transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+      transform: rotateZ(0);
+    }
   }
 
   .mastering {
