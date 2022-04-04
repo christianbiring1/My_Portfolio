@@ -34,8 +34,16 @@ header .logo {
   text-transform: capitalize;
 }
 
-header img {
+.hamburger {
+  display: block;
   cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070ff;
 }
 
 .wrapper {
@@ -558,7 +566,7 @@ header img {
     align-items: center;
   }
 
-  header img {
+  .hamburger {
     display: none;
   }
 
