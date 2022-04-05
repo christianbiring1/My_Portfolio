@@ -13,11 +13,10 @@ hamburger.addEventListener('click', () => {
   navLink.forEach((link) => link.classList.toggle('active'));
 });
 
-navLink.forEach((link) =>
-  link.addEventListener('click', () => {
+navLink.forEach((link) => link.addEventListener('click', () => {
     hamburger.classList.remove('active');
     logo.classList.remove('active');
     navMenu.classList.remove('active');
     navBar.classList.remove('active');
-    navLink.forEach((link) => link.classList.remove('active'))
+    navLink.forEach((link) => link.classList.remove('active'));
   }));
