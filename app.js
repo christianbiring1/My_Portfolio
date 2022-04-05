@@ -18,5 +18,5 @@ navLink.forEach((link) => link.addEventListener('click', () => {
   logo.classList.remove('active');
   navMenu.classList.remove('active');
   navBar.classList.remove('active');
-  navLink.forEach((link) => link.classList.remove('active'));
+navLink.forEach((link) => link.classList.remove('active'));
   }));
