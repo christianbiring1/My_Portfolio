@@ -14,8 +14,7 @@ hamburger.addEventListener('click', () => {
   navLink.forEach((link) => link.classList.toggle('active'));
 });
 
-navLink.forEach((link) =>
-  link.addEventListener('click', () => {
+navLink.forEach((link) => link.addEventListener('click', () => {
   hamburger.classList.remove('active');
   logo.classList.remove('active');
   navMenu.classList.remove('active');
@@ -28,7 +27,7 @@ navLink.forEach((link) =>
 
 const projectInfo1 = [
   { 
-    featureImage: './mob-img/SnapshootPortfolio1.png',
+   featureImage: './mob-img/SnapshootPortfolio1.png',
     classMobileImg: 'work-img1',
     classDeskImg: 'desktop-work1',
     featureImageDesk: './desktop-img/SnapshootPortfolio.png',
@@ -37,7 +36,7 @@ const projectInfo1 = [
     feature: {
       title: 'CANOPY',
       domain: 'backEndDev',
-      year: 2015
+      year: 2015,
     },
     projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript'],
@@ -52,9 +51,9 @@ const projectInfo1 = [
     projectName: 'Facebook 360',
     caption: 'Tonic',
     feature: {
-    title: 'CANOPY',
-    domain: 'backEndDev',
-    year: 2015
+      title: 'CANOPY',
+      domain: 'backEndDev',
+      year: 2015
     },
     projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript'],
@@ -72,7 +71,7 @@ const projectInfo2 = [
     feature: {
       title: 'CANOPY',
       domain: 'backEndDev',
-      year: 2015
+      year: 2015,
     },
     projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript'],
@@ -88,25 +87,24 @@ const projectInfo2 = [
     feature: {
       title: 'CANOPY',
       domain: 'backEndDev',
-      year: 2015
+      year: 2015,
     },
     projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript'],
   },
-]
+];
   
-
-/* Grab the container i.e work-section-container */
+/*  Grab the container i.e work-section-container */
 
 const workSectionContainer = document.querySelector('.work-section');
 
- /* Generate the work-section content of card 1 & 3*/
+/*Generate the work-section content of card 1 & 3  */
 
- const cardWork1 = projectInfo1.forEach((work) => {
-   const layout = document.createElement('article');
-   layout.classList.add('card-work');
-   layout.classList.add('card-work1');
-   layout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
+const cardWork1 = projectInfo1.forEach((work) => {
+  const layout = document.createElement('article');
+  layout.classList.add('card-work');
+  layout.classList.add('card-work1');
+  layout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
     <img src= "${work.featureImageDesk}" class="${work.classDeskImg}">
     <figcaption><h2>${work.caption}</h2></figcaption></figure>
     <div class="aside">
@@ -127,18 +125,18 @@ const workSectionContainer = document.querySelector('.work-section');
           </ul>
       </div>
       <button>See project</button>
-    </div>`
-    workSectionContainer.appendChild(layout);
-   console.log(layout);
+    </div>`;
+  workSectionContainer.appendChild(layout);
+  console.log(layout);
  })
 
- /* Generate the work-section content of card 2 & 4*/
+/* Generate the work-section content of card 2 & 4  */
 
- const cardWork2 = projectInfo2.forEach((work) => {
-   const secondLayout = document.createElement('article');
-   secondLayout.classList.add('card-work');
-   secondLayout.classList.add('card-work2');
-   secondLayout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
+const cardWork2 = projectInfo2.forEach((work) => {
+  const secondLayout = document.createElement('article');
+  secondLayout.classList.add('card-work');
+  secondLayout.classList.add('card-work2');
+  secondLayout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
     <img src= "${work.featureImageDesk}" class="${work.classDeskImg}">
     <figcaption><h2>${work.caption}</h2></figcaption></figure>
     <div class="aside ordering">
@@ -159,7 +157,7 @@ const workSectionContainer = document.querySelector('.work-section');
           </ul>
       </div>
       <button>See project</button>
-    </div>`
-    workSectionContainer.appendChild(secondLayout);
-   console.log(secondLayout);
- })
+    </div>`;
+  workSectionContainer.appendChild(secondLayout);
+console.log(secondLayout);
+ });
