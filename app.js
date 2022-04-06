@@ -56,7 +56,8 @@ const projectInfo1 = [
       year: 2015,
     },
     projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript'],}, 
+    technologies: ['html', 'css', 'javaScript'], 
+  }, 
 ];
 
 const projectInfo2 = [
@@ -101,8 +102,9 @@ const workSectionContainer = document.querySelector('.work-section');
 
 const cardWork1 = projectInfo1.forEach((work) => {
   const layout = document.createElement('article');
-  layout.classList.add('card-work');
-  layout.classList.add('card-work1');
+  const layoutClass = ['card-work', 'card-work1'];
+  layout.classList.add(layoutClass[0]);
+  layout.classList.add(layoutClass[1]);
   layout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
     <img src= "${work.featureImageDesk}" class="${work.classDeskImg}">
     <figcaption><h2>${work.caption}</h2></figcaption></figure>
@@ -133,8 +135,9 @@ const cardWork1 = projectInfo1.forEach((work) => {
 
 const cardWork2 = projectInfo2.forEach((work) => {
   const secondLayout = document.createElement('article');
-  secondLayout.classList.add('card-work');
-  secondLayout.classList.add('card-work2');
+  const layoutClass = ['card-work', 'card-work2'];
+  secondLayout.classList.add(layoutClass[0]);
+  secondLayout.classList.add(layoutClass[1]);
   secondLayout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
     <img src= "${work.featureImageDesk}" class="${work.classDeskImg}">
     <figcaption><h2>${work.caption}</h2></figcaption></figure>
