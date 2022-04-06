@@ -98,6 +98,153 @@ header .logo {
   font-weight: 600;
 }
 
+.popup-window {
+  width: 80%;
+  min-height: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.popup-window h2 {
+  padding: 0 20px;
+}
+.popup-window .card-work {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.popup-window .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 0;
+}
+
+.header .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.feature li {
+  list-style: none;
+  margin: 0 5px;
+}
+.feature.domain {
+  color: #7a869a;
+  line-height: 16px;
+  text-transform: capitalize;
+  width: 88px;
+  position: relative;
+}
+
+.feature .domain::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  left: -10px;
+  top: 3px;
+}
+
+.feature .domain::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  right: 5px;
+  top: 4px;
+}
+
+.popup-window .close {
+  outline: none;
+  background-color: transparent;
+  color: #67798e;
+  border: none;
+  font-size: 2rem;
+  position: relative;
+  top: -60px;
+  cursor: pointer;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+  top: -25px;
+  width: 90%;
+}
+
+.popup-body .description {
+  width: calc(100% - 20px);
+  color: #344563;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup-body .left {
+  padding-top: 20px;
+  max-width: 300px;
+}
+
+.popup-languages ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  position: relative;
+  top: 150px;
+}
+
+.popup-languages .supplement-desk {
+  display: none;
+}
+
+.popup-languages li {
+  position: relative;
+  list-style-type: none;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  border: 1px solid transparent;
+  height: 24px;
+  padding: 0.5em;
+  background: #ebebff;
+  border-radius: 20px;
+}
+
+.popup-btn {
+  position: relative;
+  top: 165px;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.live,
+.source {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 0.5em;
+  border-radius: 10px;
+  position: relative;
+  left: 0;
+}
+
 .wrapper {
   position: relative;
   height: auto;
@@ -167,7 +314,8 @@ header .logo {
 .desktop-work2,
 .desktop-work3,
 .desktop-work4 {
-  display: none;
+  display: block;
+  width: 90%;
 }
 
 .card-work button {
@@ -306,7 +454,7 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  right: 15px;
+  right: -10px;
   top: 4px;
 }
 
@@ -314,7 +462,7 @@ header .logo {
   width: 29px;
   height: 16px;
   position: relative;
-  left: -24px;
+  left: -5px;
   line-height: 16px;
 }
 
@@ -675,6 +823,122 @@ header .logo {
     width: 100%;
   }
 
+  .popup-window {
+    height: 1400px;
+  }
+
+  .popup-window h2 {
+    padding: 0 30px;
+  }
+
+  .popup-window .header {
+    margin: 20px 30px;
+  }
+
+  .header .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -20px;
+  }
+
+  .feature li {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  .feature .title {
+    position: relative;
+    top: -5px;
+  }
+
+  .feature .domain {
+    color: #6b778c;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    width: 120px;
+    top: 30x;
+    left: -5px;
+  }
+
+  .feature .domain::before {
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    top: 6px;
+  }
+
+  .feature .domain::after {
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    right: 5px;
+    top: 6px;
+  }
+
+  .feature .year {
+    position: relative;
+    left: -13px;
+    top: -5px;
+  }
+
+  .popup-window .close {
+    outline: none;
+    background-color: transparent;
+    color: #67798e;
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    top: -60px;
+    cursor: pointer;
+  }
+
+  .popup-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    width: 90%;
+  }
+
+  .popup-body .description {
+    width: calc(60% - 20px);
+    color: #344563;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .popup-languages ul {
+    width: 60%;
+    top: 10px;
+  }
+
+  .popup-languages .supplement-desk {
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+  }
+
+  .popup-languages li {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    border: 1px solid transparent;
+    height: 24px;
+    padding: 0.5em;
+    background: #ebebff;
+    border-radius: 20px;
+  }
+
+  .popup-btn {
+    top: 80px;
+  }
+
   .first-section {
     height: 800px;
     background-image: url("desktop-img/Headerbg.svg");
@@ -765,7 +1029,7 @@ header .logo {
     order: -1;
   }
 
-  .work-section h2 {
+  figcaption h2 {
     display: none;
   }
 
@@ -800,20 +1064,20 @@ header .logo {
     position: relative;
     width: 120px;
     top: -5px;
-    left: -35px;
+    left: -15px;
   }
 
   .domain::before {
     width: 10px;
     height: 10px;
-    left: 15px;
+    left: 0;
     top: 6px;
   }
 
   .domain::after {
     width: 10px;
     height: 10px;
-    right: 15px;
+    right: 0;
     top: 6px;
   }
 
@@ -821,7 +1085,7 @@ header .logo {
     font-size: 18px;
     font-weight: 400;
     color: #6b778c;
-    left: -65px;
+    left: -30px;
   }
 
   .description {
