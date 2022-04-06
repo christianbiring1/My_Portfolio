@@ -111,7 +111,7 @@ header .logo {
 .first-section {
   width: 100%;
   height: auto;
-  background-image: url("images/header-shapes\ mobile@2x.svg");
+  background-image: url("mob-img/header-shapes\ mobile@2x.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -501,7 +501,7 @@ header .logo {
 
 .contact {
   background-color: #6070ff;
-  background-image: url("./images/contact-form-background.png");
+  background-image: url("./mob-img/contact-form-background.png");
   background-repeat: no-repeat;
   background-position-x: 350px;
   padding: 80px 10px 10px 10px;

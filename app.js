@@ -28,7 +28,7 @@ navLink.forEach((link) =>
 
 const projectInfo1 = [
   { 
-    featureImage: './images/SnapshootPortfolio1.png',
+    featureImage: './mob-img/SnapshootPortfolio1.png',
     classMobileImg: 'work-img1',
     classDeskImg: 'desktop-work1',
     featureImageDesk: './desktop-img/SnapshootPortfolio.png',
@@ -45,7 +45,7 @@ const projectInfo1 = [
 
   {
 
-    featureImage: './images/SnapshootPortfolio3.png',
+    featureImage: './mob-img/SnapshootPortfolio3.png',
     classMobileImg: 'work-img3',
     classDeskImg: 'desktop-work3',
     featureImageDesk: './desktop-img/SnapshootPortfolio3.png',
@@ -63,7 +63,7 @@ const projectInfo1 = [
 
 const projectInfo2 = [
   {
-    featureImage: './images/SnapshootPortfolio2.png',
+    featureImage: './mob-img/SnapshootPortfolio2.png',
     classMobileImg: 'work-img2',
     classDeskImg: 'desktop-work2',
     featureImageDesk: './desktop-img/SnapshootPortfolio2.png',
@@ -79,7 +79,7 @@ const projectInfo2 = [
   },
 
   {
-    featureImage: './images/SnapshootPortfolio4.png',
+    featureImage: './mob-img/SnapshootPortfolio4.png',
     classMobileImg: 'work-img4',
     classDeskImg: 'desktop-work4',
     featureImageDesk: './desktop-img/SnapshootPortfolio4.png',
