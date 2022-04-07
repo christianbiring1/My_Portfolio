@@ -1,98 +1,103 @@
 /* mobile menu */
-const hamburger = document.querySelector('.hamburger');
-const logo = document.querySelector('.desk-logo');
-const navMenu = document.querySelector('.nav-menu');
-const navBar = document.querySelector('.desk-nav');
-const navLink = document.querySelectorAll('.desk-nav a');
+const hamburger = document.querySelector(".hamburger");
+const logo = document.querySelector(".desk-logo");
+const navMenu = document.querySelector(".nav-menu");
+const navBar = document.querySelector(".desk-nav");
+const navLink = document.querySelectorAll(".desk-nav a");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  logo.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  navBar.classList.toggle('active');
-  navLink.forEach((link) => link.classList.toggle('active'));
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  logo.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  navBar.classList.toggle("active");
+  navLink.forEach((link) => link.classList.toggle("active"));
 });
 
-navLink.forEach((link) => link.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  logo.classList.remove('active');
-  navMenu.classList.remove('active');
-  navBar.classList.remove('active');
-  navLink.forEach((link) => link.classList.remove('active'));
-}));
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    logo.classList.remove("active");
+    navMenu.classList.remove("active");
+    navBar.classList.remove("active");
+    navLink.forEach((link) => link.classList.remove("active"));
+  })
+);
 
 /* mobile popup window */
 /* Generate card element */
 
 const projectInfo1 = [
-  { 
-    featureImage: './mob-img/SnapshootPortfolio1.png',
-    classMobileImg: 'work-img1',
-    classDeskImg: 'desktop-work1',
-    featureImageDesk: './desktop-img/SnapshootPortfolio.png',
-    projectName: 'Tonic',
-    caption: 'Tonic',
+  {
+    featureImage: "./mob-img/SnapshootPortfolio1.png",
+    classMobileImg: "work-img1",
+    classDeskImg: "desktop-work1",
+    featureImageDesk: "./desktop-img/SnapshootPortfolio.png",
+    projectName: "Tonic",
+    caption: "Tonic",
     feature: {
-      title: 'CANOPY',
-      domain: 'backEndDev',
+      title: "CANOPY",
+      domain: "backEndDev",
       year: 2015,
     },
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    projectDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["html", "css", "javaScript", "gitHub", "Ruby", "Bootstrap"],
   },
 
   {
-
-    featureImage: './mob-img/SnapshootPortfolio3.png',
-    classMobileImg: 'work-img3',
-    classDeskImg: 'desktop-work3',
-    featureImageDesk: './desktop-img/SnapshootPortfolio3.png',
-    projectName: 'Facebook 360',
-    caption: 'Tonic',
+    featureImage: "./mob-img/SnapshootPortfolio3.png",
+    classMobileImg: "work-img3",
+    classDeskImg: "desktop-work3",
+    featureImageDesk: "./desktop-img/SnapshootPortfolio3.png",
+    projectName: "Facebook 360",
+    caption: "Tonic",
     feature: {
-      title: 'CANOPY',
-      domain: 'backEndDev',
+      title: "CANOPY",
+      domain: "backEndDev",
       year: 2015,
     },
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'], 
-  }, 
+    projectDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["html", "css", "javaScript", "gitHub", "Ruby", "Bootstrap"],
+  },
 ];
 
 const projectInfo2 = [
   {
-    featureImage: './mob-img/SnapshootPortfolio2.png',
-    classMobileImg: 'work-img2',
-    classDeskImg: 'desktop-work2',
-    featureImageDesk: './desktop-img/SnapshootPortfolio2.png',
-    projectName: 'Multi-Post Stories',
-    caption: 'Multi-Post Stories',
+    featureImage: "./mob-img/SnapshootPortfolio2.png",
+    classMobileImg: "work-img2",
+    classDeskImg: "desktop-work2",
+    featureImageDesk: "./desktop-img/SnapshootPortfolio2.png",
+    projectName: "Multi-Post Stories",
+    caption: "Multi-Post Stories",
     feature: {
-      title: 'CANOPY',
-      domain: 'backEndDev',
+      title: "CANOPY",
+      domain: "backEndDev",
       year: 2015,
     },
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    projectDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["html", "css", "javaScript", "gitHub", "Ruby", "Bootstrap"],
   },
 
   {
-    featureImage: './mob-img/SnapshootPortfolio4.png',
-    classMobileImg: 'work-img4',
-    classDeskImg: 'desktop-work4',
-    featureImageDesk: './desktop-img/SnapshootPortfolio4.png',
-    projectName: 'Uber Navigation',
-    caption: 'Multi-Post Stories',
+    featureImage: "./mob-img/SnapshootPortfolio4.png",
+    classMobileImg: "work-img4",
+    classDeskImg: "desktop-work4",
+    featureImageDesk: "./desktop-img/SnapshootPortfolio4.png",
+    projectName: "Uber Navigation",
+    caption: "Multi-Post Stories",
     feature: {
-      title: 'CANOPY',
-      domain: 'backEndDev',
+      title: "CANOPY",
+      domain: "backEndDev",
       year: 2015,
     },
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    projectDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["html", "css", "javaScript", "gitHub", "Ruby", "Bootstrap"],
   },
 ];
-  
+
 /* pop up window */
 
 const popUpData = [
@@ -100,21 +105,20 @@ const popUpData = [
     projectDescription: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modidicta suscipit iusto, iste earum quod ad optio aliquid, voluptatum
     aspernatur repellendus! Non quidem, id adipisci aut temporibus fuga dolor hic delectus numquam. Quo eligendi nesciunt reprehenderit voluptatem iure impedit tenetur nisi, officia,
     numquam minima voluptatibus? Obcaecati maxime laudantium nihil beatae?`,
-    liveDemo: 'https://christianbiring1.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/christianbiring1/My_Portfolio',
+    liveDemo: "https://christianbiring1.github.io/My_Portfolio/",
+    sourceCode: "https://github.com/christianbiring1/My_Portfolio",
   },
 ];
-
 /* Grab the container i.e work-section-container */
 
-const workSectionContainer = document.querySelector('.work-section');
-const popUpSection = document.querySelector('.popup-container')
+const workSectionContainer = document.querySelector(".work-section");
+const popUpSection = document.querySelector(".popup-container");
 
 /*  Generate the work-section content of card 1 & 3  */
 
-const cardWork1 = projectInfo1.forEach((work) => {
-  const layout = document.createElement('article');
-  const layoutClass = ['card-work', 'card-work1'];
+const cardWork1 = projectInfo1.forEach((work, i) => {
+  const layout = document.createElement("article");
+  const layoutClass = ["card-work", "card-work1"];
   layout.classList.add(layoutClass[0]);
   layout.classList.add(layoutClass[1]);
   layout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
@@ -137,33 +141,25 @@ const cardWork1 = projectInfo1.forEach((work) => {
             <li><span class="js">${work.technologies[2]}</span></li>
           </ul>
       </div>
-      <button>See project</button>
+      <button class="seeProject">See project</button>
     </div>`;
   workSectionContainer.appendChild(layout);
 
   /* Generation of the popUp container */
   /* Generate popUp window */
-  const popLayer = document.querySelector('.layer');
-  const popUpWindow = document.querySelector('.popup-window');
-  
-  //    const sample = document.querySelectorAll(`.${work.classDeskImg}`);
-  //   console.log(popUpWindow);
-  //   sample.forEach((image) => {
-  //     image.addEventListener('click', (e) => {
-  //       console.log(image.getAttribute('src'));
-  //       work.featureImageDesk = image.getAttribute('src');
-  //       console.log(work.featureImageDesk);
-  //         popUpWindow.classList.toggle('active');
-  //         popLayer.classList.toggle('active');
-  //         const closeModel = document.querySelector('.close');
-  //         closeModel.addEventListener('click', () => {
-  //           popUpWindow.classList.remove('active');
-  //           popLayer.classList.remove('active');
-  //         })
-  //   })
-  // })
-  
-  popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
+  const popLayer = document.querySelector(".layer");
+  const popUpWindow = document.querySelector(".popup-window");
+ 
+
+  const sample = document.querySelectorAll(`.${work.classDeskImg}`);
+  sample.forEach((image) => {
+    image.addEventListener("click", (e) => {
+      // popUpData[0][featureImageDesk] = image.getAttribute('src')
+      work.featureImageDesk = image.getAttribute("src");
+      console.log(i, work);
+      // console.log(work.featureImageDesk);
+
+      popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
     <div class="header">
       <ul class="feature">
         <li class="title">${work.feature.title}</li>
@@ -172,7 +168,7 @@ const cardWork1 = projectInfo1.forEach((work) => {
       </ul>
       <button class="close">&times;</button>
     </div>
-    <img src="${work.featureImageDesk}" class="card-work" alt="" />
+    <img src="${image.getAttribute("src")}" class="card-work" alt="" />
     <div class="popup-body">
       <p class="description">${popUpData[0].projectDescription}</p>
       <div class="left">
@@ -196,48 +192,25 @@ const cardWork1 = projectInfo1.forEach((work) => {
         </div>
       </div>
     </div>`;
-    // popUpSection.appendChild(popLayer);
-    popLayer.appendChild(popUpWindow);
+      // popUpSection.appendChild(popLayer);
+      popLayer.appendChild(popUpWindow);
 
-    /* Poping Up Of The Window */
-  //   const sample = document.querySelectorAll(`.${work.classDeskImg}`);
-  //   console.log(popUpWindow);
-  //   sample.forEach((image) => {
-  //     image.addEventListener('click', (e) => {
-  //       console.log(image.getAttribute('src'));
-  //       // work.featureImageDesk = image.getAttribute('src');
-  //         popUpWindow.classList.toggle('active');
-  //         popLayer.classList.toggle('active');
-  //         // popUpSection.classList.toggle('active');
-  //         const closeModel = document.querySelector('.close');
-  //         closeModel.addEventListener('click', () => {
-  //           popUpWindow.classList.remove('active');
-  //           popLayer.classList.remove('active');
-  //           // popUpSection.classList.remove('active');
-  //         })
-  //   })
-  // })
-  
-    const sample = document.querySelector('.card-work');
-    sample.addEventListener('click', () => {
-      popUpWindow.classList.toggle('active');
-      popLayer.classList.toggle('active');
-      const closeModel = document.querySelector('.close');
-      closeModel.addEventListener('click', () => {
-            popUpWindow.classList.remove('active');
-            popLayer.classList.remove('active');
-            // popUpSection.classList.remove('active');
-          })
-    })
-
-
-})
+      popUpWindow.classList.toggle("active");
+      popLayer.classList.toggle("active");
+      const closeModel = document.querySelector(".close");
+      closeModel.addEventListener("click", () => {
+        popUpWindow.classList.remove("active");
+        popLayer.classList.remove("active");
+      });
+    });
+  });
+});
 
 /* Generate the work-section content of card 2 & 4  */
 
 const cardWork2 = projectInfo2.forEach((work) => {
-  const secondLayout = document.createElement('article');
-  const layoutClass = ['card-work', 'card-work2'];
+  const secondLayout = document.createElement("article");
+  const layoutClass = ["card-work", "card-work2"];
   secondLayout.classList.add(layoutClass[0]);
   secondLayout.classList.add(layoutClass[1]);
   secondLayout.innerHTML = `<figure><img scr= "${work.featureImage}" class="${work.classMobileImg}">
@@ -260,66 +233,63 @@ const cardWork2 = projectInfo2.forEach((work) => {
             <li><span class="js">${work.technologies[2]}</span></li>
           </ul>
       </div>
-      <button>See project</button>
+      <button class="seeProject">See project</button>
     </div>`;
   workSectionContainer.appendChild(secondLayout);
 
   /* Generation of the popUp container */
   /* Generate popUp window */
-  const popLayer = document.querySelector('.layer');
-  const popUpWindow = document.querySelector('.popup-window');
-  popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
-    <div class="header">
-      <ul class="feature">
-        <li class="title">${work.feature.title}</li>
-        <li class="domain">${work.feature.domain}</li>
-        <li class="year">${work.feature.year}</li>
-      </ul>
-      <button class="close">&times;</button>
-    </div>
-    <img src="${work.featureImageDesk}" class="card-work" alt="" />
-    <div class="popup-body">
-      <p class="description">${popUpData[0].projectDescription}</p>
-      <div class="left">
-        <div class="popup-languages">
-          <ul>
-            <li>${work.technologies[0]}</li>
-            <li>${work.technologies[1]}</li>
-            <li>${work.technologies[2]}</li>
+  const popLayer = document.querySelector(".layer");
+  const popUpWindow = document.querySelector(".popup-window");
+
+  /* Poping Up Of The Window */
+  const sample = document.querySelectorAll(`.${work.classDeskImg}`);
+  console.log(popUpWindow);
+  sample.forEach((image) => {
+    image.addEventListener("click", (e) => {
+      popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
+        <div class="header">
+          <ul class="feature">
+            <li class="title">${work.feature.title}</li>
+            <li class="domain">${work.feature.domain}</li>
+            <li class="year">${work.feature.year}</li>
           </ul>
-          <ul class="supplement-desk">
-            <li>${work.technologies[3]}</li>
-            <li>${work.technologies[4]}</li>
-            <li>${work.technologies[5]}</li>  
-          <ul/>
+          <button class="close">&times;</button>
         </div>
-        <div class="popup-btn">
-          <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
-          </button>
-          <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
-          </button>
-        </div>
-      </div>
-    </div>`;
-    // popUpSection.appendChild(popUpWindow);
-    popLayer.appendChild(popUpWindow);
+        <img src="${image.getAttribute("src")}" class="card-work" alt="" />
+        <div class="popup-body">
+          <p class="description">${popUpData[0].projectDescription}</p>
+          <div class="left">
+            <div class="popup-languages">
+              <ul>
+                <li>${work.technologies[0]}</li>
+                <li>${work.technologies[1]}</li>
+                <li>${work.technologies[2]}</li>
+              </ul>
+              <ul class="supplement-desk">
+                <li>${work.technologies[3]}</li>
+                <li>${work.technologies[4]}</li>
+                <li>${work.technologies[5]}</li>  
+              <ul/>
+            </div>
+            <div class="popup-btn">
+              <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
+              </button>
+              <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>`;
 
-    /* Poping Up Of The Window */
-    const sample = document.querySelectorAll(`.${work.classDeskImg}`);
-    console.log(popUpWindow);
-    sample.forEach((image) => {
-      image.addEventListener('click', (e) => {
-        console.log(image);
-          popUpWindow.classList.toggle('active');
-          popLayer.classList.toggle('active');
-          // popUpSection.classList.toggle('active');
-          const closeModel = document.querySelector('.close');
-          closeModel.addEventListener('click', () => {
-            popUpWindow.classList.remove('active');
-            popLayer.classList.remove('active');
-            // popUpSection.classList.remove('active');
-          })
-      })
-    })
+      popLayer.appendChild(popUpWindow);
+
+      popUpWindow.classList.toggle("active");
+      popLayer.classList.toggle("active");
+      const closeModel = document.querySelector(".close");
+      closeModel.addEventListener("click", () => {
+        popUpWindow.classList.remove("active");
+        popLayer.classList.remove("active");
+      });
+    });
+  });
 });
-

@@ -162,19 +162,16 @@ header .logo {
   background-color: #fff;
   border-radius: 20px;
   z-index: 10;
-  /* position: absolute; */
   position: fixed;
-  /* transform: translate(-50%, -50%);
-  left: 50%; */
-  /* top: 0; */
-  top: 4%;
+ 
+  top: 1%;
   overflow-y: auto;
   left: 0;
   right: 0;
 }
 
 .popup-window h2 {
-  padding: 0 20px;
+  padding: 26px 20px 0;
 }
 
 .popup-window .img {
@@ -196,7 +193,7 @@ header .logo {
   align-items: center;
   position: relative;
   top: -20px;
-  width: 60%;
+  width: 96%;
 }
 
 .feature li {
@@ -242,7 +239,7 @@ header .logo {
   justify-content: space-between;
   width: 60%;
   position: relative;
-  top: 150px;
+  top: 194px;
 }
 
 .popup-languages .supplement-desk {
@@ -265,7 +262,7 @@ header .logo {
 
 .popup-btn {
   position: relative;
-  top: 165px;
+  top: 206px;
   margin: 0;
   display: flex;
   gap: 30px;
@@ -435,7 +432,7 @@ header .logo {
   border-radius: 16px;
   background-color: #fff;
   width: 100%;
-  margin: 20px auto;
+  margin: -2px auto;
 }
 
 .type {
@@ -475,6 +472,7 @@ header .logo {
   line-height: 16px;
   text-transform: capitalize;
   width: 88px;
+  left:-22px;
   position: relative;
 }
 
@@ -507,7 +505,7 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  left: -20px;
+  left: -12px;
   top: 3px;
 }
 
@@ -526,7 +524,7 @@ header .logo {
   width: 29px;
   height: 16px;
   position: relative;
-  left: -5px;
+  left: -28px;
   line-height: 16px;
 }
 
@@ -909,7 +907,7 @@ header .logo {
   }
 
   .popup-window h2 {
-    padding: 0 30px;
+    padding:15px 30px 0;
   }
 
   .popup-window .header {
@@ -917,7 +915,7 @@ header .logo {
   }
 
   .header .feature {
-    display: flex;
+    display: flex; width:35%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -931,7 +929,7 @@ header .logo {
 
   .feature .title {
     position: relative;
-    top: -5px;
+    top: 13px;
   }
 
   .feature .domain {
@@ -941,7 +939,7 @@ header .logo {
     font-weight: 400;
     position: relative;
     width: 120px;
-    top: 0;
+    top: 13px;
     left: -5px;
   }
 
@@ -1133,14 +1131,14 @@ header .logo {
   .feature .domain::before {
     width: 10px;
     height: 10px;
-    left: 5px;
+    left: -20px;
     top: 6px;
   }
 
   .feature .domain::after {
     width: 10px;
     height: 10px;
-    right: 5px;
+    right: -8px;
     top: 6px;
   }
 
@@ -1148,13 +1146,14 @@ header .logo {
     font-size: 18px;
     font-weight: 400;
     color: #6b778c;
-    left: -30px;
+    left: -33px;
+  
   }
 
   .feature .year {
     position: relative;
-    right: -30px;
-    top: -5px;
+    right: 20px;
+    top: 13px;
   }
 
   .description {
