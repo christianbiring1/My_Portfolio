@@ -98,16 +98,86 @@ header .logo {
   font-weight: 600;
 }
 
+.layer {
+  display: none;
+}
+
+.layer.active {
+  display: flex;
+  position: absolute;
+  /* position: fixed; */
+  justify-content: center;
+  align-items: center;
+  /* top: 0; */
+  top: -200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 5;
+  overflow-y: scroll;
+}
+
+.layer.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+.layer.active::-webkit-scrollbar-thumb {
+  width: 6px;
+  color: #2230d2;
+}
+
+.layer.active::-webkit-scrollbar-track {
+  background: linear-gradient(transparent, #3e4141);
+  border-radius: 6px;
+}
+
+.popup-container,
 .popup-window {
+  display: none;
+}
+
+/* .popup-container.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  z-index: 15;
+  background-color: #0000;
+  /* height: 100px;
+  background-color: rgb(0, 0, 0);
+  z-index: 11;
+  width: 100%;
+  min-height: 900px; 
+} 
+*/
+.popup-window.active {
+  display: block;
   width: 80%;
-  min-height: 900px;
+  height: 100vh;
   margin: 0 auto;
   background-color: #fff;
+  border-radius: 20px;
+  z-index: 10;
+  /* position: absolute; */
+  position: fixed;
+  /* transform: translate(-50%, -50%);
+  left: 50%; */
+  /* top: 0; */
+  top: 4%;
+  overflow-y: auto;
+  left: 0;
+  right: 0;
 }
+
 .popup-window h2 {
   padding: 0 20px;
 }
-.popup-window .card-work {
+
+.popup-window .img {
   width: 90%;
   margin: 0 auto;
   display: block;
@@ -126,40 +196,20 @@ header .logo {
   align-items: center;
   position: relative;
   top: -20px;
+  width: 60%;
 }
 
 .feature li {
   list-style: none;
   margin: 0 5px;
 }
+
 .feature.domain {
   color: #7a869a;
   line-height: 16px;
   text-transform: capitalize;
-  width: 88px;
+  width: fit-content;
   position: relative;
-}
-
-.feature .domain::before {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #c1c7d0;
-  border-radius: 50%;
-  left: -10px;
-  top: 3px;
-}
-
-.feature .domain::after {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #c1c7d0;
-  border-radius: 50%;
-  right: 5px;
-  top: 4px;
 }
 
 .popup-window .close {
@@ -180,14 +230,6 @@ header .logo {
   position: relative;
   top: -25px;
   width: 90%;
-}
-
-.popup-body .description {
-  width: calc(100% - 20px);
-  color: #344563;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .popup-body .left {
@@ -458,12 +500,39 @@ header .logo {
   top: 4px;
 }
 
+.feature .domain::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  left: -20px;
+  top: 3px;
+}
+
+.feature .domain::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  right: -25px;
+  top: 4px;
+}
+
 .year {
   width: 29px;
   height: 16px;
   position: relative;
   left: -5px;
   line-height: 16px;
+}
+
+.feature .year {
+  position: relative;
+  right: -60px;
 }
 
 .description {
@@ -473,6 +542,14 @@ header .logo {
   width: 295px;
   height: 76px;
   top: 20px;
+}
+
+.popup-body .description {
+  width: calc(100% - 20px);
+  color: #344563;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .languages {
@@ -827,6 +904,10 @@ header .logo {
     height: 1400px;
   }
 
+  figcaption h2 {
+    display: none;
+  }
+
   .popup-window h2 {
     padding: 0 30px;
   }
@@ -860,29 +941,8 @@ header .logo {
     font-weight: 400;
     position: relative;
     width: 120px;
-    top: 30x;
+    top: 0;
     left: -5px;
-  }
-
-  .feature .domain::before {
-    width: 10px;
-    height: 10px;
-    left: 5px;
-    top: 6px;
-  }
-
-  .feature .domain::after {
-    top: 4px;
-    width: 10px;
-    height: 10px;
-    right: 5px;
-    top: 6px;
-  }
-
-  .feature .year {
-    position: relative;
-    left: -13px;
-    top: -5px;
   }
 
   .popup-window .close {
@@ -904,13 +964,6 @@ header .logo {
     position: relative;
     top: 30px;
     width: 90%;
-  }
-
-  .popup-body .description {
-    width: calc(60% - 20px);
-    color: #344563;
-    font-size: 16px;
-    line-height: 30px;
   }
 
   .popup-languages ul {
@@ -1029,10 +1082,6 @@ header .logo {
     order: -1;
   }
 
-  figcaption h2 {
-    display: none;
-  }
-
   .type {
     display: block;
   }
@@ -1081,11 +1130,31 @@ header .logo {
     top: 6px;
   }
 
+  .feature .domain::before {
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    top: 6px;
+  }
+
+  .feature .domain::after {
+    width: 10px;
+    height: 10px;
+    right: 5px;
+    top: 6px;
+  }
+
   .year {
     font-size: 18px;
     font-weight: 400;
     color: #6b778c;
     left: -30px;
+  }
+
+  .feature .year {
+    position: relative;
+    right: -30px;
+    top: -5px;
   }
 
   .description {
@@ -1096,6 +1165,13 @@ header .logo {
     height: 76px;
     top: 15px;
     text-align: justify;
+  }
+
+  .popup-body .description {
+    width: calc(60% - 20px);
+    color: #344563;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   .languages-desk {
