@@ -19,7 +19,7 @@ navLink.forEach((link) => link.addEventListener('click', () => {
   navMenu.classList.remove('active');
   navBar.classList.remove('active');
   navLink.forEach((link) => link.classList.remove('active'));
-}),);
+}));
 
 /* mobile popup window */
 /* Generate card element */
