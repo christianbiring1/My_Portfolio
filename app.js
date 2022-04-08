@@ -19,8 +19,7 @@ navLink.forEach((link) => link.addEventListener('click', () => {
   navMenu.classList.remove('active');
   navBar.classList.remove('active');
   navLink.forEach((link) => link.classList.remove('active'));
-  })
-);
+}),);
 
 /* mobile popup window */
 /* Generate card element */
@@ -114,7 +113,7 @@ const workSectionContainer = document.querySelector('.work-section');
 
 /*  Generate the work-section content of card 1 & 3  */
 
-const cardWork1 = projectInfo1.forEach((work, i) => {
+projectInfo1.forEach((work) => {
   const layout = document.createElement('article');
   const layoutClass = ['card-work', 'card-work1'];
   layout.classList.add(layoutClass[0]);
@@ -199,7 +198,7 @@ const cardWork1 = projectInfo1.forEach((work, i) => {
 
 /* Generate the work-section content of card 2 & 4  */
 
-const cardWork2 = projectInfo2.forEach((work) => {
+projectInfo2.forEach((work) => {
   const secondLayout = document.createElement('article');
   const layoutClass = ['card-work', 'card-work2'];
   secondLayout.classList.add(layoutClass[0]);
