@@ -154,15 +154,15 @@ projectInfo1.forEach((work) => {
       popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
       <div class="header">
         <ul class="feature">
-          <li class="title">${work.feature.title}</li>
-          <li class="domain">${work.feature.domain}</li>
-          <li class="year">${work.feature.year}</li>
+          <li class="name">${work.feature.title}</li>
+          <li class="tech">${work.feature.domain}</li>
+          <li class="annee">${work.feature.year}</li>
         </ul>
         <button class="close">&times;</button>
       </div>
       <img src="${image.getAttribute('src')}" class="card-work" alt="" />
       <div class="popup-body">
-        <p class="description">${popUpData[0].projectDescription}</p>
+        <p class="details">${popUpData[0].projectDescription}</p>
         <div class="left">
           <div class="popup-languages">
             <ul>
@@ -178,7 +178,7 @@ projectInfo1.forEach((work) => {
           </div>
           <div class="popup-btn">
             <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
-            </button>
+            </button><br>
             <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
             </button>
           </div>
@@ -239,9 +239,9 @@ projectInfo2.forEach((work) => {
       popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
         <div class="header">
           <ul class="feature">
-            <li class="title">${work.feature.title}</li>
-            <li class="domain">${work.feature.domain}</li>
-            <li class="year">${work.feature.year}</li>
+            <li class="name">${work.feature.title}</li>
+            <li class="tech">${work.feature.domain}</li>
+            <li class="annee">${work.feature.year}</li>
           </ul>
           <button class="close">&times;</button>
         </div>

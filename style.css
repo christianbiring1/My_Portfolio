@@ -141,14 +141,14 @@ header .logo {
 
 .popup-window.active {
   display: block;
-  width: 70%;
-  height: 100vh;
+  width: 90%;
+  height: 95vh;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 20px;
   z-index: 10;
   position: fixed;
-  top: 1%;
+  top: 5%;
   overflow-y: auto;
   left: 0;
   right: 0;
@@ -168,11 +168,11 @@ header .logo {
 }
 
 .popup-window h2 {
-  padding: 26px 20px 0;
+  padding: 15px 15px 0 ;
 }
 
 .popup-window .img {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   display: block;
 }
@@ -189,21 +189,43 @@ header .logo {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -20px;
-  width: 96%;
+  top: -25px;
+  left: -5px;
+  max-width: 100px;
 }
 
 .feature li {
   list-style: none;
-  margin: 0 5px;
+  margin: 0 ;
 }
 
-.feature.domain {
-  color: #7a869a;
-  line-height: 16px;
-  text-transform: capitalize;
-  width: fit-content;
+.feature .tech {
+  color: #6b778c;
+  line-height: 24px;
+  font-weight: 400;
   position: relative;
+}
+
+.feature .tech::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  left: -8px;
+  top: 6px;
+}
+
+.feature .tech::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  right: -8px;
+  top: 6px;
 }
 
 .popup-window .close {
@@ -220,23 +242,23 @@ header .logo {
 .popup-body {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
-  position: relative;
-  top: -25px;
-  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.popup-body .left {
-  padding-top: 20px;
-  max-width: 300px;
+.popup-body .details {
+  color: #344563;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .popup-languages ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 60%;
-  position: relative;
-  top: 194px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .popup-languages .supplement-desk {
@@ -244,7 +266,7 @@ header .logo {
 }
 
 .popup-languages li {
-  position: relative;
+  text-align: center;
   list-style-type: none;
   color: #6070ff;
   font-weight: 500;
@@ -252,17 +274,15 @@ header .logo {
   letter-spacing: 0.05em;
   border: 1px solid transparent;
   height: 24px;
-  padding: 0.5em;
   background: #ebebff;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .popup-btn {
-  position: relative;
-  top: 206px;
-  margin: 0;
   display: flex;
-  gap: 30px;
+  gap: 15px;
+  flex-direction: space-between;
+  font-size: 0.9rem;
 }
 
 .live,
@@ -272,13 +292,10 @@ header .logo {
   cursor: pointer;
   font-weight: 500;
   text-align: center;
-  letter-spacing: 0.03em;
   font-size: 17px;
   text-transform: capitalize;
   padding: 0.5em;
   border-radius: 10px;
-  position: relative;
-  left: 0;
 }
 
 .wrapper {
@@ -505,26 +522,14 @@ header .logo {
   top: 4px;
 }
 
-.feature .domain::before {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #c1c7d0;
-  border-radius: 50%;
-  left: -12px;
-  top: 3px;
+.feature li {
+  list-style: none;
+  margin: 0 5px;
 }
 
-.feature .domain::after {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #c1c7d0;
-  border-radius: 50%;
-  right: -25px;
-  top: 4px;
+.feature .name {
+  position: relative;
+  font-weight: 500;
 }
 
 .year {
@@ -535,11 +540,6 @@ header .logo {
   line-height: 16px;
 }
 
-.feature .year {
-  position: relative;
-  right: -60px;
-}
-
 .description {
   position: relative;
   font-size: 15px;
@@ -547,14 +547,6 @@ header .logo {
   width: 295px;
   height: 76px;
   top: 20px;
-}
-
-.popup-body .description {
-  width: calc(100% - 20px);
-  color: #344563;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .languages {
@@ -887,8 +879,10 @@ header .logo {
     width: 100%;
   }
 
-  .popup-window {
-    height: 1400px;
+  .popup-window.active {
+    width: 80%;
+    height: 100vh;
+    top: 5%;
   }
 
   figcaption h2 {
@@ -896,7 +890,7 @@ header .logo {
   }
 
   .popup-window h2 {
-    padding: 15px 30px 0;
+    font-size: 2.5rem;
   }
 
   .popup-window .header {
@@ -904,22 +898,8 @@ header .logo {
   }
 
   .header .feature {
-    display: flex;
     width: 35%;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: -20px;
-  }
-
-  .feature li {
-    list-style: none;
-    margin: 0 5px;
-  }
-
-  .feature .title {
-    position: relative;
-    top: 13px;
+    top: -10px;
   }
 
   .domain {
@@ -931,17 +911,6 @@ header .logo {
     width: 120px;
     top: -5px;
     left: -15px;
-  }
-
-  .feature .domain {
-    color: #6b778c;
-    line-height: 24px;
-    font-size: 18px;
-    font-weight: 400;
-    position: relative;
-    width: 120px;
-    top: 13px;
-    left: -5px;
   }
 
   .popup-window .close {
@@ -965,31 +934,42 @@ header .logo {
     width: 90%;
   }
 
-  .popup-languages ul {
+  .popup-body .details {
+    color: #344563;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+  }
+
+   .popup-languages ul {
     width: 60%;
     top: 10px;
   }
-
   .popup-languages .supplement-desk {
     display: flex;
     gap: 10px;
-    padding-top: 25px;
-  }
-
-  .popup-languages li {
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    border: 1px solid transparent;
-    height: 24px;
-    padding: 0.5em;
-    background: #ebebff;
-    border-radius: 20px;
+    padding: 10px 0 30px;
   }
 
   .popup-btn {
-    top: 80px;
-  }
+    top: 10px;
+    gap: 5px;
+    position: relative;
+  } 
+
+  /* .live,
+  .source {
+    border: 1px solid #6070ff;
+    color: #396df2;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 0.5em;
+    border-radius: 10px;
+  } */
 
   .first-section {
     height: 800px;
@@ -1118,31 +1098,11 @@ header .logo {
     top: 6px;
   }
 
-  .feature .domain::before {
-    width: 10px;
-    height: 10px;
-    left: -20px;
-    top: 6px;
-  }
-
-  .feature .domain::after {
-    width: 10px;
-    height: 10px;
-    right: -8px;
-    top: 6px;
-  }
-
   .year {
     font-size: 18px;
     font-weight: 400;
     color: #6b778c;
     left: -33px;
-  }
-
-  .feature .year {
-    position: relative;
-    right: 20px;
-    top: 13px;
   }
 
   .description {
@@ -1153,13 +1113,6 @@ header .logo {
     height: 76px;
     top: 15px;
     text-align: justify;
-  }
-
-  .popup-body .description {
-    width: calc(60% - 20px);
-    color: #344563;
-    font-size: 16px;
-    line-height: 30px;
   }
 
   .languages-desk {
@@ -1332,6 +1285,10 @@ header .logo {
 @media screen and (min-width: 1120px) {
   .card-work button {
     left: -150px;
+  }
+
+  .popup-window.active {
+    width: 60%;
   }
 }
 
