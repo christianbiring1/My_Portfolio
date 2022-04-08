@@ -196,7 +196,7 @@ header .logo {
 
 .feature li {
   list-style: none;
-  margin: 0;
+  margin: 0 5px;
 }
 
 .feature .tech {
@@ -280,7 +280,7 @@ header .logo {
 .popup-btn {
   display: flex;
   gap: 15px;
-  flex-direction: space-between;
+  flex-direction: row;
   font-size: 0.9rem;
 }
 
@@ -951,8 +951,8 @@ header .logo {
     top: 10px;
     gap: 5px;
     position: relative;
-  } 
-
+  }
+  
   .first-section {
     height: 800px;
     background-image: url("desktop-img/Headerbg.svg");
