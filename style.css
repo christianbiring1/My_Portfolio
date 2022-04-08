@@ -7,6 +7,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #2230d2;
+}
+
 body {
   position: relative;
   height: 100vh;
@@ -98,6 +116,187 @@ header .logo {
   font-weight: 600;
 }
 
+.layer {
+  display: none;
+}
+
+.layer.active {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: -200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(193, 199, 208, 0.5);
+  z-index: 5;
+  overflow-y: scroll;
+}
+
+.popup-container,
+.popup-window {
+  display: none;
+}
+
+.popup-window.active {
+  display: block;
+  width: 90%;
+  height: 95vh;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 10;
+  position: fixed;
+  top: 5%;
+  overflow-y: auto;
+  left: 0;
+  right: 0;
+}
+
+.popup-window.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup-window.active::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3e4141);
+  border-radius: 6px;
+}
+
+.popup-window::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #8a9dff);
+}
+
+.popup-window h2 {
+  padding: 15px 15px 0;
+}
+
+.popup-window .img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.popup-window .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 0;
+}
+
+.header .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -25px;
+  left: -5px;
+  max-width: 100px;
+}
+
+.feature li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.feature .tech {
+  color: #6b778c;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+.feature .tech::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  left: -8px;
+  top: 6px;
+}
+
+.feature .tech::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+  right: -8px;
+  top: 6px;
+}
+
+.popup-window .close {
+  outline: none;
+  background-color: transparent;
+  color: #67798e;
+  border: none;
+  font-size: 2rem;
+  position: relative;
+  top: -60px;
+  cursor: pointer;
+}
+
+.popup-body {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.popup-body .details {
+  color: #344563;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup-languages ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.popup-languages .supplement-desk {
+  display: none;
+}
+
+.popup-languages li {
+  text-align: center;
+  list-style-type: none;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  border: 1px solid transparent;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 10px;
+}
+
+.popup-btn {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  font-size: 0.9rem;
+}
+
+.live,
+.source {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
 .wrapper {
   position: relative;
   height: auto;
@@ -111,7 +310,7 @@ header .logo {
 .first-section {
   width: 100%;
   height: auto;
-  background-image: url("images/header-shapes\ mobile@2x.svg");
+  background-image: url("mob-img/header-shapes\ mobile@2x.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -167,7 +366,8 @@ header .logo {
 .desktop-work2,
 .desktop-work3,
 .desktop-work4 {
-  display: none;
+  display: block;
+  width: 90%;
 }
 
 .card-work button {
@@ -182,6 +382,16 @@ header .logo {
   border-radius: 10px;
   position: relative;
   left: 0;
+}
+
+.card-work button img {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .contact button {
@@ -245,7 +455,7 @@ header .logo {
   border-radius: 16px;
   background-color: #fff;
   width: 100%;
-  margin: 20px auto;
+  margin: -2px auto;
 }
 
 .type {
@@ -261,10 +471,10 @@ header .logo {
 
 .type ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 236px;
   position: relative;
-  left: -10px;
+  left: 0;
 }
 
 .type ul li {
@@ -285,6 +495,7 @@ header .logo {
   line-height: 16px;
   text-transform: capitalize;
   width: 88px;
+  left: -22px;
   position: relative;
 }
 
@@ -295,7 +506,7 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  left: -15px;
+  left: -9px;
   top: 3px;
 }
 
@@ -306,15 +517,20 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  right: 15px;
+  right: -6px;
   top: 4px;
+}
+
+.feature .name {
+  position: relative;
+  font-weight: 500;
 }
 
 .year {
   width: 29px;
   height: 16px;
   position: relative;
-  left: -24px;
+  left: -44px;
   line-height: 16px;
 }
 
@@ -501,7 +717,7 @@ header .logo {
 
 .contact {
   background-color: #6070ff;
-  background-image: url("./images/contact-form-background.png");
+  background-image: url("./mob-img/contact-form-background.png");
   background-repeat: no-repeat;
   background-position-x: 350px;
   padding: 80px 10px 10px 10px;
@@ -579,24 +795,6 @@ header .logo {
 }
 
 @media only screen and (min-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #2230d2;
-  }
-
   .home-page,
   .about-page,
   .contact-page {
@@ -673,6 +871,86 @@ header .logo {
   .wrapper {
     top: 0;
     width: 100%;
+  }
+
+  .popup-window.active {
+    width: 80%;
+    height: 100vh;
+    top: 5%;
+  }
+
+  figcaption h2 {
+    display: none;
+  }
+
+  .popup-window h2 {
+    font-size: 2.5rem;
+  }
+
+  .popup-window .header {
+    margin: 20px 30px;
+  }
+
+  .header .feature {
+    width: 35%;
+    top: -10px;
+  }
+
+  .domain {
+    color: #6b778c;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    width: 120px;
+    top: -5px;
+    left: -15px;
+  }
+
+  .popup-window .close {
+    outline: none;
+    background-color: transparent;
+    color: #67798e;
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    top: -60px;
+    cursor: pointer;
+  }
+
+  .popup-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    width: 90%;
+  }
+
+  .popup-body .details {
+    color: #344563;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+  }
+
+  .popup-languages ul {
+    width: 60%;
+    top: 10px;
+  }
+
+  .popup-languages .supplement-desk {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0 30px;
+  }
+
+  .popup-btn {
+    top: 10px;
+    gap: 5px;
+    position: relative;
   }
 
   .first-section {
@@ -765,10 +1043,6 @@ header .logo {
     order: -1;
   }
 
-  .work-section h2 {
-    display: none;
-  }
-
   .type {
     display: block;
   }
@@ -792,28 +1066,17 @@ header .logo {
     width: 75px;
   }
 
-  .domain {
-    color: #6b778c;
-    line-height: 24px;
-    font-size: 18px;
-    font-weight: 400;
-    position: relative;
-    width: 120px;
-    top: -5px;
-    left: -35px;
-  }
-
   .domain::before {
     width: 10px;
     height: 10px;
-    left: 15px;
+    left: 0;
     top: 6px;
   }
 
   .domain::after {
     width: 10px;
     height: 10px;
-    right: 15px;
+    right: 0;
     top: 6px;
   }
 
@@ -821,7 +1084,7 @@ header .logo {
     font-size: 18px;
     font-weight: 400;
     color: #6b778c;
-    left: -65px;
+    left: -33px;
   }
 
   .description {
@@ -1004,6 +1267,10 @@ header .logo {
 @media screen and (min-width: 1120px) {
   .card-work button {
     left: -150px;
+  }
+
+  .popup-window.active {
+    width: 60%;
   }
 }
 
