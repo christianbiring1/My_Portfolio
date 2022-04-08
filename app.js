@@ -288,53 +288,5 @@ const cardWork2 = projectInfo2.forEach((work) => {
       });
     });
   });
-  // console.log(seeProject);
-  // seeProject.forEach((btn) => {
-  //   btn.addEventListener('click', () =>{
-  //     popUpWindow.innerHTML = `<h2>${work.projectName}</h2>
-  //       <div class="header">
-  //         <ul class="feature">
-  //           <li class="title">${work.feature.title}</li>
-  //           <li class="domain">${work.feature.domain}</li>
-  //           <li class="year">${work.feature.year}</li>
-  //         </ul>
-  //         <button class="close">&times;</button>
-  //       </div>
-  //       <img src="${image.getAttribute("src")}" class="card-work" alt="" />
-  //       <div class="popup-body">
-  //         <p class="description">${popUpData[0].projectDescription}</p>
-  //         <div class="left">
-  //           <div class="popup-languages">
-  //             <ul>
-  //               <li>${work.technologies[0]}</li>
-  //               <li>${work.technologies[1]}</li>
-  //               <li>${work.technologies[2]}</li>
-  //             </ul>
-  //             <ul class="supplement-desk">
-  //               <li>${work.technologies[3]}</li>
-  //               <li>${work.technologies[4]}</li>
-  //               <li>${work.technologies[5]}</li>  
-  //             <ul/>
-  //           </div>
-  //           <div class="popup-btn">
-  //             <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
-  //             </button>
-  //             <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
-  //             </button>
-  //           </div>
-  //         </div>
-  //       </div>`;
-
-  //     popLayer.appendChild(popUpWindow);
-
-  //     popUpWindow.classList.toggle("active");
-  //     popLayer.classList.toggle("active");
-  //     const closeModel = document.querySelector(".close");
-  //     closeModel.addEventListener("click", () => {
-  //       popUpWindow.classList.remove("active");
-  //       popLayer.classList.remove("active");
-  //     });
-  //   });
-  // })
 });
 

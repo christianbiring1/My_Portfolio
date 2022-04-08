@@ -6,6 +6,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -921,6 +922,17 @@ header .logo {
     top: 13px;
   }
 
+  .domain {
+    color: #6b778c;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    width: 120px;
+    top: -5px;
+    left: -15px;
+  }
+
   .feature .domain {
     color: #6b778c;
     line-height: 24px;
@@ -1090,17 +1102,6 @@ header .logo {
     font-size: 18px;
     font-weight: 500;
     width: 75px;
-  }
-
-  .domain {
-    color: #6b778c;
-    line-height: 24px;
-    font-size: 18px;
-    font-weight: 400;
-    position: relative;
-    width: 120px;
-    top: -5px;
-    left: -15px;
   }
 
   .domain::before {
