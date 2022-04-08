@@ -6,6 +6,23 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #2230d2;
+}
 
 body {
   position: relative;
@@ -105,31 +122,15 @@ header .logo {
 .layer.active {
   display: flex;
   position: absolute;
-  /* position: fixed; */
   justify-content: center;
   align-items: center;
-  /* top: 0; */
   top: -200px;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(193, 199, 208, 0.5);
   z-index: 5;
   overflow-y: scroll;
-}
-
-.layer.active::-webkit-scrollbar {
-  width: 10px;
-}
-
-.layer.active::-webkit-scrollbar-thumb {
-  width: 6px;
-  color: #2230d2;
-}
-
-.layer.active::-webkit-scrollbar-track {
-  background: linear-gradient(transparent, #3e4141);
-  border-radius: 6px;
 }
 
 .popup-container,
@@ -137,37 +138,32 @@ header .logo {
   display: none;
 }
 
-/* .popup-container.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  overflow-y: auto;
-  z-index: 15;
-  background-color: #0000;
-  /* height: 100px;
-  background-color: rgb(0, 0, 0);
-  z-index: 11;
-  width: 100%;
-  min-height: 900px; 
-} 
-*/
 .popup-window.active {
   display: block;
-  width: 80%;
+  width: 70%;
   height: 100vh;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 20px;
   z-index: 10;
   position: fixed;
- 
   top: 1%;
   overflow-y: auto;
   left: 0;
   right: 0;
+}
+
+.popup-window.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup-window.active::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3e4141);
+  border-radius: 6px;
+}
+
+.popup-window::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #8a9dff);
 }
 
 .popup-window h2 {
@@ -371,6 +367,16 @@ header .logo {
   left: 0;
 }
 
+.card-work button img {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
 .contact button {
   width: 140px;
   height: 48px;
@@ -472,7 +478,7 @@ header .logo {
   line-height: 16px;
   text-transform: capitalize;
   width: 88px;
-  left:-22px;
+  left: -22px;
   position: relative;
 }
 
@@ -802,24 +808,6 @@ header .logo {
 }
 
 @media only screen and (min-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    border-radius: 5px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #2230d2;
-  }
-
   .home-page,
   .about-page,
   .contact-page {
@@ -907,7 +895,7 @@ header .logo {
   }
 
   .popup-window h2 {
-    padding:15px 30px 0;
+    padding: 15px 30px 0;
   }
 
   .popup-window .header {
@@ -915,7 +903,8 @@ header .logo {
   }
 
   .header .feature {
-    display: flex; width:35%;
+    display: flex;
+    width: 35%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -1147,7 +1136,6 @@ header .logo {
     font-weight: 400;
     color: #6b778c;
     left: -33px;
-  
   }
 
   .feature .year {
