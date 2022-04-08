@@ -455,10 +455,10 @@ header .logo {
 
 .type ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 236px;
   position: relative;
-  left: -10px;
+  left: 0;
 }
 
 .type ul li {
@@ -490,7 +490,7 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  left: -15px;
+  left: -9px;
   top: 3px;
 }
 
@@ -501,7 +501,7 @@ header .logo {
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
-  right: -10px;
+  right: -6px;
   top: 4px;
 }
 
@@ -531,7 +531,7 @@ header .logo {
   width: 29px;
   height: 16px;
   position: relative;
-  left: -28px;
+  left: -44px;
   line-height: 16px;
 }
 
