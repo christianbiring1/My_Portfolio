@@ -795,6 +795,13 @@ header .logo {
   display: none;
 }
 
+.error {
+  color: #f00;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
 @media only screen and (min-width: 768px) {
   .home-page,
   .about-page,
