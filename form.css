@@ -1,5 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .error {
   color: #f00;
   padding: 0.5rem;
   border-radius: 10px;
-  font-weight: 400; }
+  font-weight: 400;
+}
