@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   overflow-x: hidden;
 }
@@ -977,6 +977,7 @@ header .logo {
     flex-direction: column;
     position: relative;
     top: 200px;
+    margin: 0 auto;
   }
 
   .primary-text {
