@@ -247,7 +247,7 @@ projectInfo2.forEach((work) => {
         </div>
         <img src="${image.getAttribute('src')}" class="card-work" alt="" />
         <div class="popup-body">
-          <p class="description">${popUpData[0].projectDescription}</p>
+          <p class="details">${popUpData[0].projectDescription}</p>
           <div class="left">
             <div class="popup-languages">
               <ul>
