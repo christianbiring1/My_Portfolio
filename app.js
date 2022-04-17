@@ -141,7 +141,6 @@ projectInfo1.forEach((work) => {
       <button class="seeProject">See project <img src= "${work.featureImageDesk}" class="${work.classDeskImg}"></button>
     </div>`;
   workSectionContainer.appendChild(layout);
-
   /* Generation of the popUp container */
   /* Generate popUp window */
 
