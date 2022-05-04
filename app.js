@@ -26,12 +26,12 @@ navLink.forEach((link) => link.addEventListener('click', () => {
 
 const projectInfo1 = [
   {
-    featureImage: './mob-img/SnapshootPortfolio1.png',
+    featureImage: './mob-img/capston1.png',
     classMobileImg: 'work-img1',
     classDeskImg: 'desktop-work1',
-    featureImageDesk: './desktop-img/SnapshootPortfolio.png',
-    projectName: 'Tonic',
-    caption: 'Tonic',
+    featureImageDesk: './desktop-img/capston1.png',
+    projectName: 'Genuine Charity',
+    caption: 'Genuine Charity',
     feature: {
       title: 'CANOPY',
       domain: 'backEndDev',
@@ -40,6 +40,9 @@ const projectInfo1 = [
     projectDescription:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    popUpDescription: `In this capstone project I have built is based on an online website for a conference. We have been provided some design guidelines to create the website, but I have personalized the content, i.e., instead of a conference I have built a website for geniune charity and care.`,
+    liveDemo: `https://christianbiring1.github.io/Capstone_project-module1/`,
+    sourceCode: `https://github.com/christianbiring1/Capstone_project-module1`,
   },
 
   {
@@ -57,6 +60,11 @@ const projectInfo1 = [
     projectDescription:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    popUpDescription: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modidicta suscipit iusto, iste earum quod ad optio aliquid, voluptatum
+    aspernatur repellendus! Non quidem, id adipisci aut temporibus fuga dolor hic delectus numquam. Quo eligendi nesciunt reprehenderit voluptatem iure impedit tenetur nisi, officia,
+    numquam minima voluptatibus? Obcaecati maxime laudantium nihil beatae?`,
+    liveDemo: `https://christianbiring1.github.io/Capstone_project-module1/`,
+    sourceCode: `https://github.com/christianbiring1/Capstone_project-module1`,
   },
 ];
 
@@ -76,6 +84,11 @@ const projectInfo2 = [
     projectDescription:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
+    popUpDescription: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modidicta suscipit iusto, iste earum quod ad optio aliquid, voluptatum
+    aspernatur repellendus! Non quidem, id adipisci aut temporibus fuga dolor hic delectus numquam. Quo eligendi nesciunt reprehenderit voluptatem iure impedit tenetur nisi, officia,
+    numquam minima voluptatibus? Obcaecati maxime laudantium nihil beatae?`,
+    liveDemo: `https://christianbiring1.github.io/Capstone_project-module1/`,
+    sourceCode: `https://github.com/christianbiring1/Capstone_project-module1`,
   },
 
   {
@@ -93,20 +106,14 @@ const projectInfo2 = [
     projectDescription:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javaScript', 'gitHub', 'Ruby', 'Bootstrap'],
-  },
-];
-
-/* pop up window */
-
-const popUpData = [
-  {
-    projectDescription: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modidicta suscipit iusto, iste earum quod ad optio aliquid, voluptatum
+    popUpDescription: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modidicta suscipit iusto, iste earum quod ad optio aliquid, voluptatum
     aspernatur repellendus! Non quidem, id adipisci aut temporibus fuga dolor hic delectus numquam. Quo eligendi nesciunt reprehenderit voluptatem iure impedit tenetur nisi, officia,
     numquam minima voluptatibus? Obcaecati maxime laudantium nihil beatae?`,
-    liveDemo: 'https://christianbiring1.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/christianbiring1/My_Portfolio',
+    liveDemo: `https://christianbiring1.github.io/Capstone_project-module1/`,
+    sourceCode: `https://github.com/christianbiring1/Capstone_project-module1`,
   },
 ];
+
 /* Grab the container i.e work-section-container */
 
 const workSectionContainer = document.querySelector('.work-section');
@@ -161,7 +168,7 @@ projectInfo1.forEach((work) => {
       </div>
       <img src="${image.getAttribute('src')}" class="card-work" alt="" />
       <div class="popup-body">
-        <p class="details">${popUpData[0].projectDescription}</p>
+        <p class="details">${work.popUpDescription}</p>
         <div class="left">
           <div class="popup-languages">
             <ul>
@@ -176,9 +183,9 @@ projectInfo1.forEach((work) => {
             <ul/>
           </div>
           <div class="popup-btn">
-            <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
+            <button class="live"><a href="${work.liveDemo}">See live</a><img src="./desktop-img/liveicon.png" alt="" />
             </button><br>
-            <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
+            <button class="source"><a href="${work.sourceCode}">Source code</a><img src="./desktop-img/sourcevector.png" alt="" />
             </button>
           </div>
         </div>
@@ -246,7 +253,7 @@ projectInfo2.forEach((work) => {
         </div>
         <img src="${image.getAttribute('src')}" class="card-work" alt="" />
         <div class="popup-body">
-          <p class="details">${popUpData[0].projectDescription}</p>
+          <p class="details">${work.popUpDescription}</p>
           <div class="left">
             <div class="popup-languages">
               <ul>
@@ -261,9 +268,9 @@ projectInfo2.forEach((work) => {
               <ul/>
             </div>
             <div class="popup-btn">
-              <button class="live">See live <img src="./desktop-img/liveicon.png" alt="" />
+              <button class="live"><a href="${work.liveDemo}">See live</a><img src="./desktop-img/liveicon.png" alt="" />
               </button>
-              <button class="source">See Source <img src="./desktop-img/sourcevector.png" alt="" />
+              <button class="source"><a href="${work.sourceCode}">See Source</a><img src="./desktop-img/sourcevector.png" alt="" />
               </button>
             </div>
           </div>

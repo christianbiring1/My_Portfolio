@@ -142,13 +142,13 @@ header .logo {
 .popup-window.active {
   display: block;
   width: 90%;
-  height: 95vh;
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: #fff;
   border-radius: 20px;
   z-index: 10;
   position: fixed;
-  top: 5%;
+  top: 0;
+  bottom: 0;
   overflow-y: auto;
   left: 0;
   right: 0;
@@ -168,7 +168,7 @@ header .logo {
 }
 
 .popup-window h2 {
-  padding: 15px 15px 0;
+  padding: 10px 15px 0;
 }
 
 .popup-window .img {
@@ -283,6 +283,11 @@ header .logo {
   gap: 15px;
   flex-direction: row;
   font-size: 0.9rem;
+}
+
+.popup-btn a {
+  text-decoration: none;
+  color: #6070ff;
 }
 
 .live,
@@ -883,8 +888,6 @@ header .logo {
 
   .popup-window.active {
     width: 80%;
-    height: 100vh;
-    top: 5%;
   }
 
   figcaption h2 {

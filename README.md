@@ -12,9 +12,9 @@
 - CSS
 - GitHubflow
 
-## Live Demo (if available)
+## Live Demo
 
-[You can check the live demo of my portfolio here](https://christianbiring1.github.io/My_Portfolio/)
+[You can check the live demo here](https://christianbiring1.github.io/My_Portfolio/)
 
 ### Prerequisites
 
